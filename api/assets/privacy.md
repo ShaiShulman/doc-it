@@ -1,8 +1,8 @@
-**Privacy Policy for MapIt! plugin**
+**Privacy Policy for DocIt! plugin**
 
-Effective Date: 19 Janaury 2024
+Effective Date: 17 February 2024
 
-This Privacy Policy applies to the MapIt! plugin ("the Plugin"), developed and operated by Shai Shulman ("we", "us", "our"). This Policy describes how we collect, use, and share information in connection with your use of the Plugin.
+This Privacy Policy applies to the DocIt! plugin ("the Plugin"), developed and operated by Shai Shulman ("we", "us", "our"). This Policy describes how we collect, use, and share information in connection with your use of the Plugin.
 
 **1. Information We Collect**
 
@@ -54,6 +54,6 @@ This Privacy Policy applies to the MapIt! plugin ("the Plugin"), developed and o
 
 **10. Contact Us**
 
-- If you have any questions about this Privacy Policy, please contact us at [mapit.info@gmail.com](mailto:mapit.info@gmail.com).
+- If you have any questions about this Privacy Policy, please contact us at [docit.hello@gmail.com](mailto:docit.hello@gmail.com).
 
-By using the MapIt! plugin, you acknowledge that you have read and understood this Privacy Policy.
+By using the DocIt! plugin, you acknowledge that you have read and understood this Privacy Policy.

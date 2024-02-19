@@ -1,21 +1,20 @@
 {
   "schema_version": "v1.1",
-  "name_for_human": "Map It!",
-  "name_for_model": "MapIt",
-  "description_for_human": "Draws a map with specific locations as markers",
-  "description_for_model": "Draws a map with specific locations as markers. Always display as an html IMG element with the output as the source",
+  "name_for_human": "Doc It!",
+  "name_for_model": "DocIt",
+  "description_for_human": "Converts a MarkDown text block to an MS-Word documents and returns the URL to the MS-Word document",
+  "description_for_model": "Receives a text block formatted as MarkDown, converts it to an MS-Word document and returns a url to that document. Always display the returned URL as a link element",
   "auth": {
     "type": "service_http",
-    "authorization_type": "bearer",
+    "authorization_type": "none",
     "verification_tokens": {
       "openai": "Replace_this_string_with_the_verification_token_generated_in_the_ChatGPT_UI"
     }
   },
   "api": {
     "type": "openapi",
-    "url": "roboguide.xyz/openapi.yaml"
+    "url": "mapit.roboguide.xyz/doc-it/openapi.yaml"
   },
-  "logo_url": "mapit.roboguide.xyz/assets/logo.png",
-  "contact_email": "mapit.info@gmail.com",
-  "legal_info_url": "https://mapit.roboguide.xyz/legal"
+  "contact_email": "docit.hello@gmail.com",
+  "legal_info_url": "https://mapit.roboguide.xyz/doc-it/legal"
 }

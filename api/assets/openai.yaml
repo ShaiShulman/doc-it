@@ -1,26 +1,44 @@
 openapi: 3.0.1
 info:
-  title: Map-It!
-  description: Draws a map with specific locations as markers.
+  title: Doc-It!
+  description: Converts a MarkDown text block to an MS-Word documents and returns the URL to the MS-Word document
   version: "v1"
 servers:
-  - url: https://mapit.roboguide.xyz
+  - url: https://mapit.roboguide.xyz/doc-it
 paths:
-  /map:
+  /convert:
     get:
-      operationId: getMap
-      summary: Returns a map with with specific locations as markers. Map is returned as a base64 image.
+      operationId: getConvert
+      summary: Convert MarkDown text to a Word document
       parameters:
-        - in: query
-          name: places
+        - name: text
+          in: query
+          required: true
           schema:
             type: string
-          description: list of geographical place names to be shown on the map, divided by semicolons.
-        - in: query
-          name: size
-          schema:
-            type: string
-          description: Size of the returned map. Can be either "small", "medium", "large", or height and width in pixels seperated by "x" (e.g. "300x300")
+            description: The text block, formatted as markdown, to be converted to a Word document
       responses:
         "200":
-          description: OKx`
+          description: url to the converted MS-Word document
+          content:
+            text/plain:
+              schema:
+                type: string
+  /document/{uuid}:
+    get:
+      operationId: getDocument
+      summary: Download a converted Word document
+      parameters:
+        - name: uuid
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: The converted Word document
+          content:
+            application/vnd.openxmlformats-officedocument.wordprocessingml.document:
+              schema:
+                type: string
+                format: binary

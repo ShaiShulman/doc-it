@@ -1,14 +1,13 @@
-# Map It!
-
-![Logo](api/assets/logo.png)
+# Doc It!
 
 ## Description
 
-Map It! is ChatGPT plugin that draws a map for the specific geographical locations mention in the prompt or response. It uses Google Map's static API to produce the map as a .png file and return a link to ChatGPT to be shown as a markdown element.
+Doc It! is ChatGPT plugin (action) designed to convert a text response formatted as MarkDown into an MS-Word .DocX file.
 
 ## Usage
 
-The repo is meant to work as the backend for a ChatGPT plugin and together with ChatGPT, as it uses ChatGPT's basic authorization scheme.
+The repo is meant to work as the backend for a ChatGPT plugin and together with ChatGPT, as can work without authorization or using ChatGPT's basic authorization scheme.
+The project should be deployed on a HTTPS-certified domain and should be added as a custom action to a custom GPT on ChatGPT's platform management dashboard.
 
 ## License
 
