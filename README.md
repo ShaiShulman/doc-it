@@ -1,5 +1,7 @@
 # Doc It!
 
+![Logo](api/assets/logo.png)
+
 ## Description
 
 Doc It! is ChatGPT plugin (action) designed to convert a text response formatted as MarkDown into an MS-Word .DocX file.
